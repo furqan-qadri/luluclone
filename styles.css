@@ -3,23 +3,83 @@ body {
   height: 2000px;
   background-color: #F2F2F2;
 }
-.header {
-  background-color: blue;
-  height: 70px;
+
+
+.top-button{
+    border:none;
+    position: fixed;
+    height: 58px;
+    width: 58px;
+    background-color: #05a551;
+    border-radius: 50%;
+    /* position: relative; */
+    bottom:40px;
+    cursor:pointer;
+    right:20px;
+    z-index:1000;
+    box-shadow: #333;
+}
+
+.inside-top-button{
+    transform: rotate(180deg);
+}
+
+input[type="text"]::placeholder {  
+                  
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    /* margin-left: 50px; */
+    padding-left: 12px;
+} 
+
+.header-1{
+display: flex;
+align-items: center;
+}
+
+
+.flag{
+    height: 16px;
+    border:1px solid white;
+    border-radius: 10%;
+    /* margin-left:5px; */
+}
+
+.header-icons{
+    height: 20px;
+    margin-right:8px;
+    margin-left:5px;
+
+    margin-top:4px;
+}
+.header-1{
+  /* background-color: blue; */
+  justify-content: space-between;
+  height: 67px;
+  align-items: center;
   display: flex;
 }
 
 .header-bottom {
   background-color: #05a551;
+  height: 40px;
+  display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+    font-weight:bold;
 }
 
 .header-bottom-buttons {
-  height: 50px;
+  height: 30px;
   background-color: #05a551;
   color: white;
   border: none;
   /* font: px; */
-  font-size: 14px;
+  font-size: 13px;
 }
 .deals-button {
   background-color: #ffcb03;
@@ -32,6 +92,8 @@ body {
 .bottom-bottom {
   font-weight: 300;
   color: white;
+  align-items: center;
+  display: flex;
 }
 
 .owl-buttons {

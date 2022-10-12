@@ -11,35 +11,51 @@
     <title>Lulu Hypermarket</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <div class="header">
-        <div style="display: flex;" class="header-1">
+
+    <button id="top-button" class="top-button">
+        <img class="inside-top-button" src="./arrow_down.svg" alt="">
+    </button>
+
+        <div class="header-1">
+
+
             <div>
                 <img style="height: 40px;"src="./logo-lulu.png" alt="">
             </div>
-            <div>
-                <input style="height: 29px;
-                border-radius: 5px;
-                border:1px solid green;
-                width:230px;" type="text">
 
-                <button style="height: 29px;
-                border-radius: 5px;
-                border:1px solid green;
-                width: 35px;
-                background-color: green;
+
+            <div style="
+            display: flex;
+            ">
                 
-                "></button>
-            </div>
-        </div>
-
-        <div class="header-2">
-            <div class="">
-                <button style="height: 29px;
+                <input placeholder="What are you looking for?" id="input" style="height: 36px;
                 border-radius: 5px;
-                border:1px solid green;
-                width: 95px;
-                background-color: green;
+                border:1px solid #05A551;
+                width:390px;" type="text"
+                >
+                <button style="height: 40px;
+                border-radius: 5px;
+                border:1px solid #05A551;
+                width: 49px;
+                margin-left:-19px;
+                background-color: #05A551;
+
+                
+                
+                ">
+            
+            <img class="header-icons" src="./search.svg" alt="">
+             
+            </button>
+            </div>
+            <div class="">
+                <button style="height: 25px;
+                border-radius: 5px;
+                border:1px solid #05A551;
+                width: 105px;
+                background-color: #05A551;
                 color:white;
                 font-weight: bold;
                 
@@ -49,39 +65,80 @@
                 </button>
             </div>
 
-            <div class="">
+            <div style="
+            /* background-color:#F2F2F2 ; */
+            " class="">
                 <button style="
                 border:none;
-                background-color:white;
+                background-color:#F2F2F2;
                 font-weight: bold;
                 color:green;
+                /* padding-left: 4px;
+                padding-right: 4px; */
                 
                 
-                "> <img src="./login-logo.png" alt=""> Login</button>
+                "> <img src="./login-logo.png" alt="">
+                
+                 <b style="
+                 font-size:14px;
+                 color:#05A551;
+                 ">Login</b> 
+            
+            </button>
             </div>
-            <div class=""></div>
+
+
+            <div style="
+        height:38px;
+        width:38px;
+        border-radius: 50%;
+        background-color:#05A551;
+        " class="">
+
+        <img style="height: 21px;
+        margin-left:8px;
+        margin-top:8px;
+        
+        "
+        src="./free_icon_1.svg" alt="">
+        
+             </div>
+
+
+        </div >
+
+
+
         </div>
 
-<!-- <svg>
-    <use xlink:href="/_ui/responsive/common/images/theme-lulu-ar/images/lulu-icons.svg#cart"></use>
-    </svg> -->
+        <div class="header-2">
+           
 
-    <svg>
-        <use xlink:href="/_ui/responsive/common/images/theme-lulu-ar/images/lulu-icons.svg#cart" fill="#FFFFFF"></use>
-        </svg>
+          
 
-    </div>
 
-    <div class="header-bottom" style="display:flex;
-    /* justify-content: space-between; */
-    ">
+    <div class="header-bottom">
         <div style="
          margin-right: 120px;"
         
-        class="">Malaysia Flag</div>
+        class="bottom-bottom">
+    <div>
+        <img class="flag" src="./flag_my.png" alt="">
+    </div>
+    <div><img class="header-icons" src="./arrow_down.svg" alt=""></div>
 
 
-        <div class="">
+</div>
+
+
+        <div class="header-1">
+
+            <a href="">  <div>
+                <img class="header-icons" src="./menu_icon.svg" alt="">
+               </div>
+    </a>
+         
+
             <button class="header-bottom-buttons">GROCERY</button>
             <button class="header-bottom-buttons">GROCERY</button>
             <button class="header-bottom-buttons">GROCERY</button>
@@ -91,19 +148,34 @@
             <button class="deals-button">DEALS</button>       
     </div>
 
-    <div style="display:flex;
-    /* justify-content: space-between; */
-    margin-left: 70px;
-    background-color: antiquewhite;
-    ">
-        <div class="bottom-bottom">Ampang, 54100</div>
-        <div class="bottom-bottom"> Mon | 10th Oct | 13:00-16:00 </div>
-    </div>
+
+        <div class="bottom-bottom">
+            <div>
+                <img class="header-icons" src="./8240160651551939479.svg" alt="">
+            </div>
+           <div> <b>Ampang, 54100</b> </div>
+           <div><img class="header-icons" src="./arrow_down.svg" alt=""></div>
+        
+        </div>
+
+
+        <div class="bottom-bottom"> 
+            <div><img class="header-icons" src="./clocl.svg" alt=""></div>
+            
+            <div><b>Mon | 10th Oct | 13:00-16:00 </b>  </div>
+            <div><img class="header-icons" src="./arrow_down.svg" alt=""></div>
+            
+        
+        
+        </div>
+
+
+    
 
     </div>
 
-    <img style="display: ;height:240px;
-    width:100%" src="./FREE-DELIVERY-WEBSITE.jpg" alt="">
+    <img style="height:240px;
+    width:100%;" src="./FREE-DELIVERY-WEBSITE.jpg" alt="">
 
     <div style="display:flex;
     justify-content: space-around;
@@ -595,51 +667,143 @@ font-weight: 700;
     </div>
 </div>
 
+<div style="
+display: flex;
+flex-direction: row;
+height: 80px;
+background-color: #05A551;
+/* gap:660px; */
+justify-content: space-between;
+align-items: center;
+margin-top: 15px;
+padding-left: 10px;
 
-<div class="footer-1">
-        <div>
-            <B>GET IN TOUCH</B> <br>
-            <a href="">With our support channels</a> 
-        </div>
-        <div class="footer-1-right">
-            <ul class="footer-1-list">
-                <li>
-                    <a href="">
-                        <div style="
-                        background-color: white;
-                        width:56px;
-                        height: 56px;
-                        border-radius: 50%;
-                        ">
-                        </div>
-                    </a>
-                    <h5>TELEPHONE</h5>
-                    <p>
-                        <a href="">1900121200</a>
-                    </p>
-                </li>
-                <li>
-                    <a href="">
-                        <div style="
-                        background-color: white;
-                        width:56px;
-                        height: 56px;
-                        border-radius: 50%;
-                        ">
-                        </div>
-                    </a>
-                    <h5>TELEPHONE</h5>
-                    <p>
-                        <a href="">1900121200</a>
-                    </p>
-                </li>
-
-            </ul>
+">
+     <div >
+            <span 
+            style="
+            display: inline-block;
+            color:white;
+            margin-left:10px;
+            margin-top:-6px;
+            font-size: 14px;
+            /* gap:4px; */
             
+            ">  
+               <b style="
+               display: inline-block;
+               font-size: 16px;
+               margin-bottom:2px;
+               
+               ">
+                 GET IN TOUCH
+            </b> 
+            <br>
+            With our support channels
+            
+            </span>
+    </div>
+
+    <div>
+
+       
+    
+
+    <div style="display: flex;
+    gap:40px;
+    align-items: center;
+    /* background-color: red; */
+    /* width: 95%; */
+    ">
+        <div style="display: flex;
+        " >
+
+            <div style="
+            height: 60px;
+            width:60px;
+            border-radius: 50%;
+            background-color: white;
+            ">
+                <img style="height: 30px;
+                margin-left:15px;
+                margin-top:14px;
+                
+                "src="./email-svgrepo-com.svg" alt="">
+            </div>
+            
+            <div >
+                <span 
+                style="
+                display: inline-block;
+                color:white;
+                margin-left:10px;
+                margin-top:10px;
+                font-size: 14px;
+                
+                ">  
+                
+                TELEPHONE <br>
+                   <b style="
+                   display: inline-block;
+                   margin-top: 5px;
+                   
+                   ">1900190012</b> 
+                
+                </span>
+             
+            </div>
+            
+        
+        </div>
+        <div style="display: flex;" >
+
+            <div style="
+            height: 60px;
+            width:60px;
+            border-radius: 50%;
+            background-color: white;
+            ">
+                <img style="height: 30px;
+                margin-left:15px;
+                margin-top:14px;
+                
+                "src="./email-svgrepo-com.svg" alt="">
+            </div>
+            
+            <div >
+                <span 
+                style="
+                display: inline-block;
+                color:white;
+                margin-left:10px;
+                margin-top:10px;
+                font-size: 14px;
+                
+                ">  
+                
+                EMAIL <br>
+                   <b style="
+                   display: inline-block;
+                   margin-top: 5px;
+                   
+                   ">
+                 customercaremy@luluhypermarket.com</a>
+                  
+                
+                </b> 
+                
+                </span>
+             
+            </div>
+            
+        
+        </div>
+        <div>
 
         </div>
+    </div>
 
-
+</div>
 
 </div>
 
@@ -690,6 +854,10 @@ background-color: rgb(255, 255, 255);"class="footer-2">
 
     </div>
 
+
+
+
+    
     <div class="footer-2-2">
         <div>
             <p style="margin-top:-8px;
@@ -773,48 +941,10 @@ background-color: rgb(255, 255, 255);"class="footer-2">
         </div>
 </footer>
 
-<!-- 
-<footer style="display:flex;" class="footer-last">
 
+<!-- <img src="./shopping_cart.svg" alt=""> -->
 
-    <div class="font-normal"> ©2022 Lulu Hypermarket</div>
-
-
-    <div style="display: flex;
-    
-    margin-left:600px;
-    
-    " class="font-normal">
-
-    <ul style="display:flex;
-    justify-content: center;
-    list-style: none;
-    
-    ">
-    
-    <li>  Pay securely with </li>
-    <li><img class="last-footer-icons" src="./visa.png" alt=""></li>
-    <li><img class="last-footer-icons" src="./visa.png" alt=""></li>
-    <li><img class="last-footer-icons" src="./visa.png" alt=""></li>
-
-
-</ul>
-
-    
-
-
-
-    <span>Payment verified by </span>
-    <img class="last-footer-icons" src="./visa.png" alt="">
-    
-
-
-    </div>
-</footer> -->
-  
-  
-
-
+<script src="script.js"></script>
 
 </body>
 </html>
